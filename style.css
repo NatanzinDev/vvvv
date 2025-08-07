@@ -1,0 +1,41 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* Um gradiente suave e romântico */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #d6336c; /* Um tom de rosa mais forte para o título */
+    margin-bottom: 2em;
+}
+
+.avancar-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #d6336c;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.avancar-link:hover {
+    background-color: #c2255c; /* Um tom mais escuro ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de elevação sutil */
+}
