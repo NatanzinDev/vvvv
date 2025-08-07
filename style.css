@@ -13,9 +13,10 @@ body {
 
 .container {
     padding: 2em;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
 }
 
 h1 {
@@ -23,19 +24,46 @@ h1 {
     margin-bottom: 2em;
 }
 
-.avancar-link {
+/* Novo container para os botões */
+.botoes-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 15px; /* Espaço entre os botões */
+    flex-wrap: wrap; /* Permite que os botões quebrem a linha em telas pequenas */
+}
+
+/* Estilo base para AMBOS os botões */
+.botao {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #d6336c;
     color: white;
     text-decoration: none;
     border-radius: 25px;
     font-size: 1.2em;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
 }
 
-.avancar-link:hover {
-    background-color: #c2255c; /* Um tom mais escuro ao passar o mouse */
+.botao:hover {
     transform: translateY(-3px); /* Efeito de elevação sutil */
+}
+
+/* Cor específica para o botão SIM */
+.botao.sim {
+    background-color: #d6336c; /* Rosa vibrante */
+}
+
+.botao.sim:hover {
+    background-color: #c2255c;
+}
+
+/* Cor específica para o botão NÃO */
+.botao.nao {
+    background-color: #868e96; /* Cinza amigável */
+}
+
+.botao.nao:hover {
+    background-color: #6c757d;
 }
